@@ -1,3 +1,4 @@
+import { MatDialogModule } from '@angular/material/dialog';
 import { RouterModule } from '@angular/router';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
@@ -12,9 +13,16 @@ import { ListComponent } from './list/list.component';
 import { MatTableModule } from '@angular/material/table';
 import { MatPaginatorModule } from '@angular/material/paginator';
 import { MatSortModule } from '@angular/material/sort';
+import { ConfirmDialogComponent } from './confirm-dialog/confirm-dialog.component';
 
 @NgModule({
-  declarations: [WelcomeComponent, AddUserComponent, AddProductComponent, ListComponent],
+  declarations: [
+    WelcomeComponent,
+    AddUserComponent,
+    AddProductComponent,
+    ListComponent,
+    ConfirmDialogComponent,
+  ],
   imports: [
     CommonModule,
     ReactiveFormsModule,
@@ -25,6 +33,7 @@ import { MatSortModule } from '@angular/material/sort';
     MatTableModule,
     MatPaginatorModule,
     MatSortModule,
+    MatDialogModule,
   ],
 })
 export class AdminModule {}

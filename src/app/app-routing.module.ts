@@ -7,6 +7,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { WelcomeComponent } from './admin/welcome/welcome.component';
 import { AuthenticationGuard } from './auth/authentication.guard';
 import { PermissionsGuard } from './auth/permissions.guard';
+import { FormGuardGuard } from './auth/form-guard.guard';
 
 const routes: Routes = [
   {
@@ -20,10 +21,12 @@ const routes: Routes = [
         children: [
           {
             path: 'add-user',
+            canDeactivate: [FormGuardGuard],
             component: AddUserComponent,
           },
           {
             path: 'add-product',
+            canDeactivate: [FormGuardGuard],
             component: AddProductComponent,
           },
         ],
