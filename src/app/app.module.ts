@@ -7,7 +7,6 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatButtonModule } from '@angular/material/button';
 import { MatDialogModule } from '@angular/material/dialog';
-import { AdminModule } from './admin/admin.module';
 import { HomeModule } from './home/home.module';
 
 @NgModule({
@@ -19,7 +18,6 @@ import { HomeModule } from './home/home.module';
     MatToolbarModule,
     MatDialogModule,
     MatButtonModule,
-    AdminModule,
     HomeModule,
   ],
   providers: [],

@@ -1,3 +1,4 @@
+import { AdminRoutingModule } from './admin-routing.module';
 import { MatDialogModule } from '@angular/material/dialog';
 import { RouterModule } from '@angular/router';
 import { NgModule } from '@angular/core';
@@ -34,6 +35,7 @@ import { ConfirmDialogComponent } from './confirm-dialog/confirm-dialog.componen
     MatPaginatorModule,
     MatSortModule,
     MatDialogModule,
+    AdminRoutingModule,
   ],
 })
 export class AdminModule {}
